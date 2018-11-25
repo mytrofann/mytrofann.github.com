@@ -541,6 +541,7 @@ img {
 .about__title {
   margin: 0;
   padding: 0;
+  padding-right: 20px;
   padding-bottom: 40px;
   display: block;
   font-size: 26px;
@@ -586,15 +587,31 @@ img {
   .about {
     width: 738px;
     margin-left: 30px;
+    padding-right: 30px;
     -webkit-clip-path: polygon(10% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 18%);
-            clip-path: polygon(10% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 18%); } }
+            clip-path: polygon(10% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 18%); }
+  .about__description-wrapper {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 @media (min-width: 1440px) {
   .about {
     width: 1390px;
     margin-left: 50px;
+    padding-right: 50px;
     -webkit-clip-path: polygon(9% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 30%);
-            clip-path: polygon(9% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 30%); } }
+            clip-path: polygon(9% 0%, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0% 30%); }
+  .about__autor {
+    font-size: 21px; } }
 
 .portfolio {
   margin: 0;
@@ -733,6 +750,7 @@ img {
 .summary {
   margin: 0;
   padding: 40px 10px;
+  padding-bottom: 100px;
   background-color: #ffffff; }
 
 .summary__title {
@@ -746,7 +764,7 @@ img {
 .summary__description {
   margin: 0;
   padding: 0 10px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   text-align: center; }
 
 .summary__button-wrapper {
@@ -777,7 +795,7 @@ img {
     background: #0000008c; }
 
 .summary__download-arrow {
-  top: 11px;
+  top: 0;
   left: 74px;
   position: absolute;
   fill: #9e9e9e; }
