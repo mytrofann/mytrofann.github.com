@@ -763,7 +763,7 @@ img {
 .main-nav__wrapper {
   width: 320px;
   margin: 0;
-  padding: 0 50px;
+  padding: 0 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1478,9 +1478,12 @@ img {
     padding-left: 215px; } }
 
 .categories {
+  width: 320px;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .categories__title {
   margin: 0;
@@ -1511,11 +1514,15 @@ img {
   padding: 25px 10px;
   padding-left: 0;
   padding-bottom: 0;
-  list-style: none; }
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .categories__item {
   padding-left: 60px;
   padding-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
@@ -1810,7 +1817,9 @@ img {
   width: 320px;
   margin: 0;
   padding: 0 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .crumbs__list {
   margin: 0;
