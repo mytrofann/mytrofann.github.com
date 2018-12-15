@@ -314,32 +314,25 @@ template {
   overflow: hidden; }
 
 @font-face {
-  font-family: "Muller";
-  font-weight: 500;
+  font-family: "Calibri";
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: local("Muller"), local("Muller-Medium"), url("../fonts/Muller-Medium.woff") format("woff"); }
+  src: local("Calibri Light"), local("Calibri-Light"), url("../fonts/Calibri-Light.woff") format("woff"); }
 
 @font-face {
-  font-family: "Muller";
+  font-family: "Calibri";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("Calibri Regular"), local("Calibri-Regular"), url("../fonts/Calibri-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Calibri";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Muller"), local("Muller-Bold"), url("../fonts/Muller-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: "Muller";
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-  src: local("Muller"), local("Muller-ExtraBold"), url("../fonts/Muller-ExtraBold.woff") format("woff"); }
-
-@font-face {
-  font-family: "Muller";
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-  src: local("Muller"), local("Muller-Heavy"), url("../fonts/Muller-Heavy.woff") format("woff"); }
+  src: local("Calibri Bold"), local("Calibri-Bold"), url("../fonts/Calibri-Bold.woff") format("woff"); }
 
 body {
   min-width: 320px;
@@ -1586,6 +1579,7 @@ img {
 
 @media (min-width: 768px) {
   .categories {
+    width: 768px;
     padding-left: 15px; }
   .categories__title {
     padding: 25px 0;
@@ -1596,6 +1590,9 @@ img {
     padding-left: 194px; } }
 
 @media (min-width: 1200px) {
+  .categories {
+    width: 380px;
+    margin: 0; }
   .categories__title {
     padding-left: 65px; }
   .categories__list {
@@ -1607,10 +1604,12 @@ img {
 
 @media (min-width: 1600px) {
   .categories {
+    width: 405px;
     padding-left: 25px; } }
 
 @media (min-width: 1920px) {
   .categories {
+    width: 565px;
     padding-left: 185px; } }
 
 .subscription-two {
@@ -2180,8 +2179,12 @@ img {
 .products__availability {
   display: block;
   margin: 0;
+  padding: 0;
+  padding-bottom: 15px; }
+
+.products__availability-in-stock {
+  margin: 0;
   padding: 0 5px;
-  padding-bottom: 15px;
   font-weight: 700;
   line-height: 18px; }
 
