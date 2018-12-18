@@ -342,14 +342,15 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  color: #000000;
+  color: black;
   font-style: normal;
   text-transform: none;
-  background-color: #ffffff; }
+  background-color: white;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
-  color: #000000; }
+  color: black; }
 
 img {
   max-width: 100%;
@@ -363,7 +364,7 @@ img {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: white;
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1110,9 +1111,7 @@ img {
   font-weight: 400;
   color: black;
   background-color: white;
-  -webkit-text-decoration: underline dashed;
-          text-decoration: underline dashed;
-  text-align: left; }
+  border-bottom: 1px black dashed; }
   .filter__check-button::before {
     display: none; }
   .filter__check-button::after {
