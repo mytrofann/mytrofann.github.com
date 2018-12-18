@@ -370,7 +370,7 @@ img {
   border: none;
   cursor: pointer;
   position: relative; }
-  .button:before {
+  .button::before {
     content: "";
     top: 0;
     left: -9px;
@@ -405,8 +405,8 @@ img {
   background-image: url("../img/header.jpg");
   background-position: 50% 87%;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3); }
 
 @media (min-width: 768px) {
   .page-header {
@@ -437,8 +437,8 @@ img {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3); }
 
 @media (min-width: 768px) {
   .top-line {
@@ -621,7 +621,7 @@ img {
   .buttons-list__item::before {
     content: "";
     top: 5px;
-    left: -25px;
+    left: -30px;
     width: 1px;
     height: 40px;
     position: absolute;
@@ -729,7 +729,7 @@ img {
     .main-nav__wrapper::before {
       content: "";
       top: 0;
-      left: 0px;
+      left: 0;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -935,7 +935,7 @@ img {
   .sidebar__title::before {
     content: "";
     top: 0;
-    left: 0px;
+    left: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1091,15 +1091,16 @@ img {
   text-transform: lowercase;
   background-color: transparent;
   position: relative; }
-  .filter__check-item-button:before {
+  .filter__check-item-button::before {
     background-color: white;
     border: 1px solid #dbeac1; }
   .filter__check-item-button::after {
     display: none; }
-  .filter__check-item-button:hover:before {
+  .filter__check-item-button:hover::before {
     background-color: #89ca18; }
 
-.filter__check-item:hover, .filter__check-item-button:hover {
+.filter__check-item:hover,
+.filter__check-item-button:hover {
   color: white; }
 
 .filter__check-button {
@@ -1114,10 +1115,11 @@ img {
   text-align: left; }
   .filter__check-button::before {
     display: none; }
-  .filter__check-button:after {
+  .filter__check-button::after {
     display: none; }
 
-.filter__check-item:hover, .filter__check-button:hover {
+.filter__check-item:hover,
+.filter__check-button:hover {
   fill: white; }
 
 .filter__price-list {
@@ -1136,7 +1138,7 @@ img {
   margin: 0;
   padding: 0;
   position: relative; }
-  .filter__price-min-wrapper:before {
+  .filter__price-min-wrapper::before {
     content: "";
     top: 0;
     left: -5px;
@@ -1158,7 +1160,7 @@ img {
   margin: 0;
   padding: 0;
   position: relative; }
-  .filter__price-max-wrapper:before {
+  .filter__price-max-wrapper::before {
     content: "";
     top: 0;
     left: -5px;
@@ -1194,7 +1196,7 @@ img {
   color: black;
   background-color: transparent;
   position: relative; }
-  .filter__price-button:before {
+  .filter__price-button::before {
     content: "";
     top: 0;
     left: -9px;
@@ -1212,7 +1214,7 @@ img {
     display: none; }
   .filter__price-button:hover {
     color: white; }
-    .filter__price-button:hover:before {
+    .filter__price-button:hover::before {
       background-color: #89ca18; }
 
 .filter__gender-list {
@@ -1235,9 +1237,6 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
-
-.filter__gender-input-checkbox {
-  position: relative; }
 
 .filter__gender-input-checkbox + label::before {
   content: "";
@@ -1340,7 +1339,7 @@ img {
     display: none; }
   .filter__button-submit:hover {
     color: white; }
-    .filter__button-submit:hover:before {
+    .filter__button-submit:hover::before {
       background-color: #89ca18; }
 
 .filter__button-reset {
@@ -1358,7 +1357,7 @@ img {
     display: none; }
   .filter__button-reset:hover {
     color: white; }
-    .filter__button-reset:hover:before {
+    .filter__button-reset:hover::before {
       background-color: #89ca18; }
 
 @media (min-width: 768px) {
@@ -1581,7 +1580,7 @@ img {
 
 .subscription-two__filter-option {
   position: relative; }
-  .subscription-two__filter-option:before {
+  .subscription-two__filter-option::before {
     content: "";
     top: 0;
     left: 0;
@@ -1660,7 +1659,7 @@ img {
     padding-left: 30px; }
   .subscription-two__filter-option {
     position: relative; }
-    .subscription-two__filter-option:before {
+    .subscription-two__filter-option::before {
       width: 87%; }
   .subscription-two__filter-button {
     right: 70px; } }
@@ -1759,7 +1758,7 @@ img {
   margin: 0;
   padding: 0;
   position: relative; }
-  .crumbs__item:before {
+  .crumbs__item::before {
     content: "";
     top: 0;
     left: -15px;
@@ -1852,7 +1851,7 @@ img {
   padding-bottom: 10px;
   font-weight: 300;
   position: relative; }
-  .catalog-controls__sort-form:before {
+  .catalog-controls__sort-form::before {
     content: "";
     top: 0;
     left: -15px;
@@ -1875,7 +1874,7 @@ img {
   padding-bottom: 10px;
   font-weight: 300;
   position: relative; }
-  .catalog-controls__amount-form:before {
+  .catalog-controls__amount-form::before {
     top: 0;
     left: -15px;
     position: absolute;
@@ -1913,7 +1912,7 @@ img {
   padding-bottom: 10px;
   font-weight: 300;
   position: relative; }
-  .catalog-controls__view-item:before {
+  .catalog-controls__view-item::before {
     top: 0;
     left: -15px;
     position: absolute;
@@ -2008,8 +2007,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .products__item:hover {
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); }
 
 .products__item:nth-child(9) {
   width: 320px; }
@@ -2206,9 +2205,9 @@ img {
   padding: 8px 10px;
   padding-left: 40px;
   padding-bottom: 10px; }
-  .products__button:before {
+  .products__button::before {
     top: 0;
-    left: -0px; }
+    left: 0; }
   .products__button::after {
     top: 0;
     left: 15px; }
@@ -2225,10 +2224,10 @@ img {
 .products__button--not {
   display: none;
   position: relative; }
-  .products__button--not:before {
+  .products__button--not::before {
     content: "";
     top: 0;
-    left: -0px;
+    left: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2260,7 +2259,7 @@ img {
   padding-left: 25px;
   color: #000000;
   position: relative; }
-  .products__button--in-basket:before {
+  .products__button--in-basket::before {
     content: "";
     top: 0;
     left: 2px;
@@ -2364,8 +2363,7 @@ img {
     padding-top: 10px; }
   .products__item:last-child .products__code {
     display: block;
-    padding-top: 10px; }
-  .products__item:last-child .products__code {
+    padding-top: 10px;
     position: relative;
     bottom: 0;
     left: -555px;
@@ -2389,7 +2387,7 @@ img {
 
 .pagination__item {
   position: relative; }
-  .pagination__item:before {
+  .pagination__item::before {
     content: "";
     top: 0;
     left: -12px;
@@ -2419,7 +2417,7 @@ img {
     background-color: #89ca18;
     z-index: -1; }
 
-.pagination__item:last-child:before {
+.pagination__item:last-child::before {
   border-right: 1px solid #dbeac1; }
 
 .pagination__item:hover a {
@@ -2834,7 +2832,7 @@ img {
   right: 26px;
   width: 30px;
   margin: 0;
-  padding: 14px 0;
+  padding: 13px 0;
   position: absolute;
   background-color: white; }
   .subscription__filter-button::before {
@@ -2995,7 +2993,7 @@ input:required {
     display: none; }
   .modal__button:hover {
     color: white; }
-    .modal__button:hover:before {
+    .modal__button:hover::before {
       background-color: #89ca18; }
 
 .modal__close {
