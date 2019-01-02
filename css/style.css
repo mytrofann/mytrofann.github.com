@@ -476,6 +476,10 @@ img {
   text-transform: uppercase;
   text-align: center; }
   .site-list__item-link:hover {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: #0000000c; }
 
 @media (min-width: 768px) {
@@ -498,12 +502,7 @@ img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 18px;
-    text-transform: inherit; }
-    .site-list__item-link:hover {
-      border-bottom-left-radius: 30px;
-      border-top-left-radius: 30px;
-      border-bottom-right-radius: 30px;
-      border-top-right-radius: 30px; } }
+    text-transform: inherit; } }
 
 .index-page-main {
   width: 320px;
